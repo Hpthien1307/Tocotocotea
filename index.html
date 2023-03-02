@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/reponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="JAVASCRIPT/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <title>TheCoffeeHouse</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-up">
+            <div class="info-up">
+                <img src="https://file.hstatic.net/1000075078/file/vector_706a88566eab4f009bed6eea93cd890b.png" alt="">
+                <a href="">154 Cửa hàng khắp cả nước</a>
+            </div>
+            <div class="info-up">
+                <img src="https://file.hstatic.net/1000075078/file/group_8de276faa50c486b9d485826c506803b.png" alt="">
+                <a href="">Đặt hàng: 1800.6936</a>
+            </div>
+            <div class="info-up">
+                <img src="https://file.hstatic.net/1000075078/file/vector_c337310f409d440f890b370ff9cefe44.png" alt="">
+                <a href="">Freeship từ 50.000vnd</a>
+            </div>
+            <div class="form-member">
+                <a class="sign" href="">Đăng kí</a>
+                <a class="login" href="">Đăng nhập</a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="list-menu-mobile">
+            <ul class="menu-mobile">
+                <div class="close">
+                    <i class="fa-solid fa-square-xmark"></i>
+                </div>
+                <li><a href="">Cà phê</a></li>
+                <li><a href="">Trà </a></li>
+                <li><a href="">Menu <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="">Chuyện nhà <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="">Cảm hứng CloudFee</a></li>
+                <li><a href="">Cửa hàng</a></li>
+                <li><a href="">Tuyển dụng</a></li>
+            </ul>
+        </div>
+        <div class="header-down">
+            <!-- mobile -->
+            <div hidden class="menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- mobile -->
+
+            <div class="logo">
+                <img src="https://mondial.vn/application/media/news/2020/12/thuong_hieu_dat_trong_boi_canh_doanh_nghiep_vua_va_nho/logo_the_coffee_house_1.png" alt="">
+            </div>
+            <div class="list-menu-pc" id="helloworld" >
+                <ul class="menu-pc">
+                    <li><a href="">Cà phê</a></li>
+                    <li><a href="">Trà </a></li>
+                    <li><a href="">Menu <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="">Chuyện nhà <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li><a href="">Cảm hứng CloudFee</a></li>
+                    <li><a href="">Cửa hàng</a></li>
+                    <li><a href="">Tuyển dụng</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="layout"></div>
+    <div class="form-login">
+        <div class="close-login">
+            <i class="fa-solid fa-square-xmark"></i>
+        </div>
+        <div class="up-input">
+            <p>Tài khoản</p>
+            <input type="text" placeholder="Tài khoản">
+        </div>
+        <div class="down-input">
+            <p>Mật khẩu</p>
+            <input type="password" placeholder="Mật khẩu">
+        </div>
+        <button>Đăng nhập</button>
+    </div>
+    <div class="form-sign">
+        <div class="close-login">
+            <i class="fa-solid fa-square-xmark"></i>
+        </div>
+        <div class="up-input">
+            <p>Họ và Tên</p>
+            <input type="text" placeholder="Họ và tên">
+        </div>
+        <div class="up-input">
+            <p>SĐT</p>
+            <input type="text" placeholder="Số điện thoại">
+        </div>
+        <div class="up-input">
+            <p>Email</p>
+            <input type="text" placeholder="Email">
+        </div>
+        <div class="up-input">
+            <p>Tài khoản</p>
+            <input type="text" placeholder="Tài khoản">
+        </div>
+        <div class="down-input">
+            <p>Mật khẩu</p>
+            <input type="password" placeholder="Mật khẩu">
+        </div>
+        <div class="down-input">
+            <p>Nhập lại Mât khẩu</p>
+            <input type="password" placeholder="Mật khẩu">
+        </div>
+        <button>Đăng kí</button>
+    </div>
+    <div class="content">
+        <div class="bg-sales">
+            <img src="https://file.hstatic.net/1000075078/file/web_desktop_7dd1d790c3ae4fa6b8740643aed26931.jpg" alt="">
+        </div>
+        <div class="menu-item">
+            <div class="picture">
+                <img src="https://file.hstatic.net/1000075078/file/highlight_cc022d45647d43e9bfbe1248b4573788.jpg" alt="">
+            </div>
+            <div class="list-item">
+                <img src="https://product.hstatic.net/1000075078/product/cloudfee-hanh-nhan-nuong_ba00ec49e2c141ce957f0015cc52ffe7_large.png" alt="">
+                <div class="list-item-info">
+                    <a href="">CloudFee Hạnh nhân Nướng</a>
+                    <span>49.000 đ</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <img src="https://product.hstatic.net/1000075078/product/bg-tch-sua-da-no_3f754dc5ebfc49c6a73b231781dbc3d5_large.jpg" alt="">
+                <div class="list-item-info">
+                    <a href="">The Coffee House sữa đá</a>
+                    <span>39.000 đ</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <img src="https://product.hstatic.net/1000075078/product/1669736893_hi-tea-vai_86427bfa982f48188db23833b7196f2a_large.png" alt="">
+                <div class="list-item-info">
+                    <a href="">Hi-tea Trà Vải</a>
+                    <span>49.000 đ</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <img src="https://product.hstatic.net/1000075078/product/1669736835_ca-phe-sua-da_ec94966a51e74a089779e4b761090321_large.png" alt="">
+                <div class="list-item-info">
+                    <a href="">Cà phê sữa đá</a>
+                    <span>29.000 đ</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <img src="https://product.hstatic.net/1000075078/product/1638440015_banh-mi-vietnam_02c90a5912f84a45b303eb5036b6dcb7_large.jpg" alt="">
+                <div class="list-item-info">
+                    <a href="">Bánh mì VN thịt nguội</a>
+                    <span>35.000 đ</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <img src="https://product.hstatic.net/1000075078/product/1655348107_mochi-choco_6498979c562a466c91c61200bc86e96a_large.jpg" alt="">
+                <div class="list-item-info">
+                    <a href="">Mochi kem Chocolate</a>
+                    <span>19.000 đ</span>
+                </div>
+            </div>
+        </div>
+        <div class="selection">
+            <img src="	https://file.hstatic.net/1000075078/file/cloudtea_1_44b35a015ef14a1ba798b209937eeeb7.png" alt="">
+            <div class="info-right">
+                <img src="https://file.hstatic.net/1000075078/file/tagline_2_2a16d1acfd32480299bfd999e9e67afb.png" alt="">
+                <div class="cloudtea">
+                    Bộ sưu tập “Cầu Toàn Kèo Thơm” không chỉ là thức uống chăm da giữ dáng, mà còn là “vía may mắn” để năm mới thêm trọn vẹn. Với nền trà tốt cho sức khoẻ cùng hương vị mãng cầu và thơm giúp giải ngấy, topping đầy đặn, “Cầu Toàn Kèo Thơm” mang ý nghĩa sung túc cho năm 2023. Chiếc ly mèo đáng yêu còn như một lời chúc may mắn Nhà gửi đến bạn.
+                </div>
+                <button>Thử ngay</button>
+            </div>
+        </div>
+        <div class="paper-content">
+            <h2>
+                <img src="https://file.hstatic.net/1000075078/file/coffee-2_2_92db24958ff14ac4b4249b3256f7a415.png" alt="">
+                Chuyện Nhà
+            </h2>
+            <h3>Coffeeholic</h3>
+            <div class="wrapper-content">
+                <div class="form-content">
+                    <img src="https://file.hstatic.net/1000075078/article/3__1__2b67342f4db64bb082944cf078afd910_grande.jpg" alt="">
+                    <div class="day-content">
+                        <span>09/02/2023</span>
+                    </div>
+                    <a href="">SIGNATURE - BIỂU TƯỢNG VĂN HOÁ CÀ PH...</a>
+                    <p>Mới đây, các "tín đồ" cà phê đang bàn tán xôn xao về SIGNATURE - Biểu tượng văn hóa cà phê của The Coffee House đã quay trở lại.Một lời...</p>
+                </div>
+                <div class="form-content">
+                    <img src="https://file.hstatic.net/1000075078/article/_dsc2358_5075c84b1b114f72b968dad9e9e9ceaa_grande.jpg" alt="">
+                    <div class="day-content">
+                        <span>20/09/2023</span>
+                    </div>
+                    <a href="">UỐNG GÌ KHI TỚI SIGNATURE BY THE...</a>
+                    <p>Vừa qua, The Coffee House chính thức khai trương cửa hàng SIGNATURE by The Coffee House, chuyên phục vụ cà phê đặc sản, các món ăn đa bản sắc ấy...</p>
+                </div>
+                <div class="form-content">
+                    <img src="https://file.hstatic.net/1000075078/article/thecoffehouse_ca_phe_01_b4adbd88db6e4ca3b7c2c5934d1a1ed9_grande.jpg" alt="">
+                    <div class="day-content">
+                        <span>12/02/2023</span>
+                    </div>
+                    <a href="">CÁCH NHẬN BIẾT HƯƠNG VỊ CÀ PHÊ...</a>
+                    <p>Cùng Arabica, Robusta cũng là loại cà phê nổi tiếng được sử dụng phổ biến ở Việt Nam và nhiều nước khác trên thế giới. Với nhiều đặc điểm riêng, không...</p>
+                </div>
+            </div>
+            <h3>Teaholic</h3>
+            <div class="wrapper-content">
+                <div class="form-content">
+                    <img src="https://file.hstatic.net/1000075078/article/cautoankeothom_thecoffeehouse_03_29cd435c9a574e1a867ac36f2c863bb6_grande.jpg" alt="">
+                    <div class="day-content">
+                        <span>16/01/2023</span>
+                    </div>
+                    <a href="">BỘ SƯU TẬP CẦU TOÀN KÈO THƠM: "VÍA"...</a>
+                    <p>Tết nay vẫn giống Tết xưa, không hề mai một nét văn hoá truyền thống mà còn thêm vào những hoạt động “xin vía” hiện đại, trẻ trung. Ví như...</p>
+                </div>
+                <div class="form-content">
+                    <img src="https://file.hstatic.net/1000075078/article/dscf0216_2890bcca44ae49aaaf843d5fa3db2fc6_grande.jpg" alt="">
+                    <div class="day-content">
+                        <span>16/08/2022</span>
+                    </div>
+                    <a href="">“KHUẤY ĐỂ THẤY TRĂNG" - KHUẤY LÊN...</a>
+                    <p>Năm 2022 là năm đề cao sức khỏe tinh thần nên giới trẻ muốn tận hưởng một Trung thu với nhiều trải nghiệm mới mẻ, rôm rả cùng bạn bè...</p>
+                </div>
+                <div class="form-content">
+                    <img src="https://file.hstatic.net/1000075078/article/hinh_cover_hero_c7bbff15ef674270ae8390da9c2be2ab_grande.jpg" alt="">
+                    <div class="day-content">
+                        <span>12/08/2023</span>
+                    </div>
+                    <a href="">“KHUẤY ĐỂ THẤY TRĂNG” - HOT TREND M...</a>
+                    <p>“Khuấy để thấy trăng” - trải nghiệm “ có 1 không 2” được The Coffee House tung ra cho mùa trung thu năm nay, hứa hẹn làm giới trẻ háo...</p>
+                </div>
+            </div>
+            <h3>Blog</h3>
+            <div class="wrapper-content">
+                <div class="form-content">
+                    <img src="https://file.hstatic.net/1000075078/article/signaturebythecoffeehouse_03_16b2ab7101e14d62835a4b231e73b65d_grande.jpg" alt="">
+                    <div class="day-content">
+                        <span>19/01/2023</span>
+                    </div>
+                    <a href="">SIGNATURE BY THE COFFEE HOUSE - "DẤU...</a>
+                    <p>Ngày 11.01.2023, Chuỗi The Coffee House thông báo cửa hàng SIGNATURE by The Coffee House chính thức khai trương tại trung tâm thương mại Crescent Mall, Nguyễn Văn Linh, Quận...</p>
+                </div>
+                <div class="form-content">
+                    <img src="https://file.hstatic.net/1000075078/article/dscf6292_d784e8350a0942c1965127ecf57587ee_grande.jpg" alt="">
+                    <div class="day-content">
+                        <span>15/12/2022</span>
+                    </div>
+                    <a href="">CHIẾC LY ĐỔI MÀU "NGÀN NGƯỜI THEO...</a>
+                    <p>Bộ sản phẩm Trà sữa Merry CloudTea trong chiếc ly đổi màu từ The Coffee House hiện đang“làm mưa làm gió" từ mạng xã hội tới đời thực, khiến giới...                    </p>
+                </div>
+                <div class="form-content">
+                    <img src="https://file.hstatic.net/1000075078/article/z3663478710700_0f36930c9ad300ade688f7ed1ddbd4f8_ceb536831696441fa7e8d9a2ad990c44_grande.jpg" alt="">
+                    <div class="day-content">
+                        <span>22/08/2023</span>
+                    </div>
+                    <a href="">CŨNG LÀ ĂN BÁNH, THƯỞNG TRÀ, NGẮM...</a>
+                    <p>Trung thu là dịp mà bất kỳ ai cũng có thể “bé lại” để niềm háo hức đón Tết Đoàn viên, ăn bánh, thưởng trà… vẫn đầy ắp trong lòng....</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-service">
+                <div class="column-footer">
+                    <h3>Giới thiệu</h3>
+                    <ul>
+                        <li><a href="">Về chúng tôi</a></li>
+                        <li><a href="">Sản phẩm</a></li>
+                        <li><a href="">Khuyến mãi</a></li>
+                        <li><a href="">Chuyện cà phê</a></li>
+                        <li><a href="">Cửa hàng</a></li>
+                        <li><a href="">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+                <div class="column-footer">
+                    <h3>Điều khoản</h3>
+                    <ul>
+                        <li><a href="">Điều khoản sử dụng</a></li>
+                        <li><a href="">Chính sách bảo mật thông tin</a></li>
+                    </ul>
+                </div>
+                <div class="column-footer">
+                    <div class="hotline-footer">
+                        <p>
+                            <img src="https://file.hstatic.net/1000075078/file/phone_0a42df1c753c4fa0910108daa73fe2ef.png" alt="">
+                            Đặt hàng : 1800.6936
+                        </p>
+                        <p>
+                            <img src="https://file.hstatic.net/1000075078/file/map-pin-2-line_575ccb91b6f94a308d1bd507d4ae72a7.png" alt="">
+                            Liên hệ
+                        </p>
+                    </div>
+                    <div class="address">
+                        Tầng 3-4 Hub Building
+                        195/10E Điện Biên Phủ, P.15 ,
+                        Q.Bình Thạnh, TP.Hồ Chí Minh
+                    </div>
+                </div>
+                <div class="column-footer-social">
+                    <div class="title-social">
+                        <img src="https://scontent.fsgn2-5.fna.fbcdn.net/v/t1.6435-1/53327481_2294812427459437_7857033109093482496_n.jpg?stp=cp0_dst-jpg_p80x80&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=sKbZV9BMSIYAX_er_d-&_nc_ht=scontent.fsgn2-5.fna&oh=00_AfAbQF53pev5TwGHiYQfN8OtQO1_nrKeNu5B2AWvNMPlqg&oe=6427BA20" alt="">
+                        <div class="info-social">
+                            <a href="">
+                                The Coffee House
+                                <i class="fa-solid fa-circle-check"></i>
+                            </a>
+                            <p>
+                                <span>600.724 lượt thích</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <div class="facebook">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            Đã thích
+                        </div>
+                        <div class="share">
+                            <i class="fa-solid fa-share"></i>
+                            Chia sẻ
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="footer-info">
+                <ul>
+                    <li><a href="">
+                        Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN
+                    </a></li>
+                    <li><a href="">
+                        Mã số DN: 0312867172 do sở kế hoạch và đầu tư tp. HCM cấp ngày 23/07/2014. Người đại diện: NGÔ NGUYÊN KHA
+                    </a></li>
+                    <li><a href="">
+                        Địa chỉ: 86-88 Cao Thắng, phường 04, quận 3, tp Hồ Chí Minh   Điện thoại: (028) 7107 8079   Email: hi@thecoffeehouse.vn
+                    </a></li>
+                    <li><a href="">
+                        © 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
