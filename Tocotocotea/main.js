@@ -77,5 +77,16 @@ $(document).ready(function () {
 
   // load web
   TweenMax.staggerFrom($('body'),0.5,{top:100,opacity:0},0.5)
+  // end
 
+  // show menu bar mobile
+  var iconBar = $('.icon-bar');
+  var buttonClose = $('.close');
+  var menuMobile = $('.list-menu');
+  $(iconBar).click(()=>{
+    $(menuMobile).addClass('open-menu-mobile');
+  })
+  $(buttonClose).click(()=>{
+    $(menuMobile).removeClass('open-menu-mobile')
+  })
 });

@@ -109,7 +109,7 @@ button {
   height: 100%;
 }
 .header-navbar {
-  max-height: 1140px;
+  max-width: 100%;
   height: 77px;
   display: flex;
   justify-content: space-between;
@@ -1000,4 +1000,42 @@ animation: show-form-success 0.6s forwards;
   visibility: visible;
   transform: translateX(0);
 }
+}
+/* mobile */
+.list-menu{
+  text-transform: uppercase;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #292929c7;
+  border-left: 1px solid #f0f0f0;
+  height: 100vh;
+  width: 225px;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0;
+  transform: translateX(225px);
+  transition: animation 0.4s ease-in;
+}
+.open-menu-mobile{
+  animation: openMenuMoblie 1s forwards;
+}
+
+@keyframes openMenuMoblie {
+  0%{
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+    transform: translateX(225px);
+  }
+  100%{
+    opacity: 1;
+    display: block;
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+.icon-bar{
+  display: none;
 }
