@@ -40,7 +40,7 @@ $(document).ready(function () {
     event.preventDefault()
     $('html,body').animate({scrollTop:$('.home-news-promotion').offset().top},400,'easeInOutExpo')
   })
-  // end
+  // end 
 
   // click recruitment show form apply job
   $('.navbar li:nth-child(6) a').on('click',function(event){

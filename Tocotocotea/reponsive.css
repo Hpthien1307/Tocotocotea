@@ -8,7 +8,7 @@
         height: 30px !important;
     }
     .logo > a{
-        width: 100px;
+        width: 100px; 
         height: 30px;
         object-fit: cover;
         display: block;
